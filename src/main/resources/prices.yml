@@ -1,0 +1,39 @@
+# ==========================================================
+#                   mHarvest Fiyat Listesi
+# ==========================================================
+# Not: Buradaki isimler Minecraft materyal isimleri (ID) olmalıdır.
+# Fiyatlar her 1 ADET ürün için geçerlidir.
+
+prices:
+  # Temel Ekinler
+  WHEAT: 5.0           # Buğday
+  CARROT: 6.0          # Havuç
+  POTATO: 6.0          # Patates
+  BEETROOT: 5.5        # Pancar
+  
+  # Blok Halindeki Meyveler
+  PUMPKIN: 10.0        # Kabak
+  MELON: 8.0           # Karpuz (Blok olarak kırılırsa)
+  MELON_SLICE: 2.0     # Karpuz Dilimi (Parça olarak düşerse)
+  
+  # Kamış ve Kaktüs
+  SUGAR_CANE: 4.0      # Şeker Kamışı
+  CACTUS: 3.0          # Kaktüs
+  BAMBOO: 1.5          # Bambu
+  
+  # Nether Bitkileri
+  NETHER_WART: 12.0    # Nether Siğili
+  
+  # Yeni Nesil Ekinler (Opsiyonel)
+  SWEET_BERRIES: 2.5   # Tatlı Orman Meyveleri
+  GLOW_BERRIES: 4.0    # Parlayan Meyveler
+  COCOA_BEANS: 4.5     # Kakaolu Çekirdekler
+
+# ==========================================================
+# BİLGİLENDİRME:
+# 1. Makine hasat yaptığında, düşen eşya yukarıdaki listede 
+#    varsa otomatik olarak satılır.
+# 2. Eğer bir eşyayı satmak istemiyorsanız listeden silebilir
+#    veya fiyatını 0 yapabilirsiniz.
+# 3. Ondalık sayılar için nokta (.) kullanınız.
+# ==========================================================

@@ -1,0 +1,71 @@
+# ==========================================================
+#                   mHarvest Yapılandırma
+# ==========================================================
+
+# Veritabanı Ayarları
+# type: Verileri nerede saklayacağınızı seçin. "SQLITE" (dosya) veya "MYSQL" (sunucu)
+database:
+  type: "SQLITE"
+  host: "localhost" # MySQL kullanmıyorsanız dokunmayın
+  port: 3306
+  name: "mharvest"
+  user: "root"
+  pass: "password"
+
+# Genel Eklenti Ayarları
+settings:
+  # Bir makinenin marketteki başlangıç satış fiyatı
+  machine-cost: 10000
+  
+  # Otomatik satıştan kesilecek vergi yüzdesi (Örn: %5.0)
+  tax-percent: 5.0
+  
+  # Menülerdeki boş boşlukları dolduracak cam materyali
+  # Örn: BLACK_STAINED_GLASS_PANE, WHITE_STAINED_GLASS_PANE
+  menu-filler: "GRAY_STAINED_GLASS_PANE"
+
+# ==========================================================
+#                   Market Menü Ayarları
+# ==========================================================
+
+# Market içindeki Bilgi (Kitap) ikonunun tasarımı
+market-info:
+  name: "&b&l| &mHarvest &8- &fBilgilendirme"
+  lore:
+    - ""
+    - "&7Bu gelişmiş makine, belirlenen alandaki"
+    - "&7olgunlaşmış ekinleri otomatik hasat eder."
+    - ""
+    - "&e&nSeviye Avantajları:&r"
+    - " &8» &fLv1: &b5x5 Alan &7| &e27 Slot Depo"
+    - " &8» &fLv2: &b9x9 Alan &7| &e36 Slot Depo"
+    - " &8» &fLv3: &b13x13 Alan &7| &e54 Slot Depo"
+    - ""
+    - "&6&lDİKKAT:"
+    - " &c● &7Makine çalışmak için &eKömür &7ister."
+    - " &c● &7Satışlar otomatik yapılır ve vergi kesilir."
+
+# ==========================================================
+#                   Makine Seviye Ayarları
+# ==========================================================
+
+# Her seviye için özelleştirilebilir değerler
+# range: Merkezin etrafındaki blok sayısı (2 = 5x5 alan, 3 = 7x7 alan vb.)
+# speed: Her 5 saniyede bir satılacak maksimum ürün miktarı
+# storage: Makineye tıklandığında açılacak deponun slot sayısı (9, 18, 27, 36, 45, 54 olmalı)
+levels:
+  1:
+    cost: 0          # İlk seviye olduğu için geliştirme ücreti yok
+    range: 2         # 5x5 Hasat Alanı
+    speed: 10        # Döngü başına 10 ürün satar
+    storage: 27      # 3 Satır Depo
+  2:
+    cost: 25000      # Lv1'den Lv2'ye geçiş ücreti
+    range: 4         # 9x9 Hasat Alanı
+    speed: 20        # Döngü başına 20 ürün satar
+    storage: 36      # 4 Satır Depo
+  3:
+    cost: 50000      # Lv2'den Lv3'e geçiş ücreti
+    range: 6         # 13x13 Hasat Alanı
+    speed: 40        # Döngü başına 40 ürün satar
+    storage: 54      # 6 Satır (Full) Depo

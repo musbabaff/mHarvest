@@ -1,0 +1,12 @@
+name: mHarvest
+version: 1.1
+main: com.blockstock.mharvest.MHarvestPlugin
+api-version: 1.20
+authors: [BlockStock] # Buraya kendi adını veya ekip adını yazabilirsin 👤
+depend: [Vault] # Vault yüklü değilse eklenti çalışmaz 📁
+commands:
+  mharvest:
+    description: mHarvest ana komutu.
+    usage: /mharvest
+    permission: mharvest.use
+    aliases: [mh, harvest]

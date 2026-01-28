@@ -1,0 +1,35 @@
+# ==========================================================
+#                   mHarvest Mesaj Sistemi
+# ==========================================================
+
+# Tüm mesajların başında görünecek isim etiketi
+prefix: "&6&lM-HARVEST &8» "
+
+# Genel Bildirimler
+bought: "&aTebrikler! Makineniz teslim edildi, envanterinizi kontrol edin."
+money-error: "&cÜzgünüm, hesabınızda yeterli bakiye bulunmuyor!"
+not-owner: "&cBu erişim engellendi! Makinenin sahibi veya arkadaşı değilsiniz."
+
+# Makine İşlemleri
+machine-place: "&aMakine başarıyla kuruldu! &7(Sahibi: &e%player%&7)"
+machine-break: "&cMakine söküldü ve envanterine geri verildi."
+fuel-added: "&e+&6%fuel% &ayakıt eklendi! Hasat işlemlerine devam ediliyor."
+
+# Geliştirme Sistemi
+upgrade-success: "&b&lKUTLAMA! &7Makine başarıyla &fSeviye %level% &7oldu."
+max-level: "&cBu makine zaten ulaşabileceği en yüksek seviyede!"
+
+# Arkadaş Sistemi
+friend-added: "&a%player% &7artık bu makineyi yönetebilir."
+friend-removed: "&c%player% &7makine yetkilerinden çıkarıldı."
+
+# Satış ve Ekonomi
+# %amount%: satılan ürün sayısı | %money%: kazanılan para | %tax%: kesilen vergi
+actionbar-sell: "&a&lSATIŞ: &f%amount% Adet &8| &eKazanç: &a%money% TL &7(Vergi: -%%%tax%)"
+
+# Komut ve Sistem Mesajları (Yeni Eklendi)
+help-header: "&6&m--------&r &6&lM-HARVEST YARDIM &6&m--------"
+help-footer: "&6&m----------------------------------"
+reload-success: "&aYapılandırma dosyaları başarıyla yenilendi!"
+no-permission: "&cBu işlemi yapmak için yetkiniz bulunmuyor!"
+usage-error: "&cYanlış kullanım! Doğrusu: &e/mh %usage%"
