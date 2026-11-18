@@ -13,7 +13,7 @@ Coal-fuelled auto-harvesting machines for Spigot/Paper servers. Players buy a ma
 - **Built-in storage** opened by clicking the machine
 - **Auto-sell** through Vault, with a configurable tax percentage
 - **Coal fuel**: machines only run while they have fuel
-- **Shared access**: machine owners can add friends
+- **Access control**: only the owner, players on the machine's friend list, or admins can open a machine
 - **SQLite or MySQL** persistence
 - Fully configurable menus, messages (`messages.yml`) and crop prices (`prices.yml`)
 
@@ -35,7 +35,7 @@ A new machine costs `10,000` from the market by default (`settings.machine-cost`
 
 ## Installation
 
-1. Download the latest jar from [Releases](https://github.com/musbabaff/mHarvest/releases) or build it yourself (see below).
+1. Build the jar (see [Building from source](#building-from-source)).
 2. Drop it into your server's `plugins/` folder together with Vault.
 3. Start the server once to generate `config.yml`, `messages.yml` and `prices.yml`.
 4. Adjust the configuration and run `/mharvest reload`.
